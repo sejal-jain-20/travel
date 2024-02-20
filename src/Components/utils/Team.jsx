@@ -4,10 +4,16 @@ import img1 from "../../assets/Pic2.png";
 import img2 from "../../assets/Pic3.png";
 import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
 
-const ImgWithText = ({ icon, title , subtitle}) => (
+const ImgWithText = ({ icon, title, subtitle }) => (
   <Flex direction="column" align="center">
-    <Image src={icon} width={"15vw"} objectFit={"contain"} mb={5} />
-    
+    <Image
+      src={icon}
+      minW={"10vh"}
+      maxW={"35vh"}
+      objectFit={"contain"}
+      mb={5}
+    />
+
     <Text mt={2} textAlign="center" fontSize={"md"}>
       {subtitle}
     </Text>
@@ -49,9 +55,13 @@ const Team = () => {
       />
       <Box w={"100%"}>
         <Flex wrap="wrap" gap={20} align="center" justify="center" mt={"39"}>
-          <ImgWithText icon={img} title="Founder & Director" subtitle="Manoj Kumar Jain"/>
-          <ImgWithText icon={img2} title="Director"   subtitle={"Prakhar Jain"}/>
-          <ImgWithText icon={img1} title="Director"  subtitle={"Sanjeep Jain"}/>
+          <ImgWithText
+            icon={img}
+            title="Founder & Director"
+            subtitle="Manoj Kumar Jain"
+          />
+          <ImgWithText icon={img2} title="Director" subtitle={"Prakhar Jain"} />
+          <ImgWithText icon={img1} title="Director" subtitle={"Sanjeep Jain"} />
         </Flex>
       </Box>
     </Box>

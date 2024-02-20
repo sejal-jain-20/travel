@@ -3,16 +3,17 @@ import React from "react";
 import { BsLuggage } from "react-icons/bs";
 import { FaHandshake } from "react-icons/fa6";
 import { FaHandsHoldingCircle } from "react-icons/fa6";
-import { Tb24Hours } from "react-icons/tb";
 import { Ri24HoursLine } from "react-icons/ri";
 import { MdQuickreply } from "react-icons/md";
-import { BsAirplaneEngines } from "react-icons/bs";
 
-const IconWithText = ({ icon, title }) => (
+const IconWithText = ({ icon, title ,subtitle}) => (
   <Flex direction="column" align="center">
     {icon}
     <Text mt={2} textAlign="center">
       {title}
+    </Text>
+    <Text mt={.5} textAlign="center">
+      {subtitle}
     </Text>
   </Flex>
 );
@@ -57,27 +58,28 @@ const Ourmotto = () => {
         <Flex wrap="wrap" gap={20} align="center" justify="center" mt={"39"}>
           <IconWithText
             icon={<FaHandshake size={70} color="green" />}
-            title="Handshake"
+            title="Provision with"
+            subtitle={"the best services"}
           />
           <IconWithText
             icon={<BsLuggage size={70} color="green" />}
-            title="Luggage"
+            title="Well-done"
+            subtitle={"travel arrangements"}
           />
           <IconWithText
             icon={<FaHandsHoldingCircle size={70} color="green" />}
-            title="Hands Holding Circle"
+            title="Provide"
+            subtitle={"Premier Journey experience"}
           />
           <IconWithText
             icon={<Ri24HoursLine size={70} color="green" />}
-            title="24 Hours"
+            title="24/7 Hours"
+            subtitle={"customer support"}
           />
           <IconWithText
             icon={<MdQuickreply size={70} color="green" />}
-            title="Quick Reply"
-          />
-          <IconWithText
-            icon={<BsAirplaneEngines size={70} color="green" />}
-            title="Airplane Engines"
+            title="Prompt reply"
+            subtitle={"to every situation"}
           />
         </Flex>
       </Box>

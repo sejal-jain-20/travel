@@ -68,11 +68,11 @@ const Header = () => {
 
           {/* Menu Links in the middle */}
           <HStack display={{ base: "none", md: "flex" }} spacing={6}>
-            <MenuLink url="/explore" title="Popular visited places" />
-            <MenuLink url="/explore" title="About us" />
-            <MenuLink url="/lendcloth" title="Our motto" />
-            <MenuLink url="/lendcloth" title="Our client" />
-            <MenuLink url="/lendcloth" title="Contact us" />
+            <MenuLink url="/" title="Popular visited places" />
+            <MenuLink url="/" title="About us" />
+            <MenuLink url="/" title="Our motto" />
+            <MenuLink url="/" title="Our client" />
+            <MenuLink url="/" title="Contact us" />
           </HStack>
 
           <Box></Box>
@@ -98,8 +98,11 @@ const Header = () => {
               <DrawerHeader>Menu</DrawerHeader>
               <DrawerBody mt={30}>
                 <VStack spacing="8">
-                  <MenuLink url="/lendcloth" title="Lend Clothes" />
-                  <MenuLink url="/explore" title="Explore" />
+                <MenuLink url="/" title="Popular visited places" />
+                <MenuLink url="/" title="About us" />
+                <MenuLink url="/" title="Our motto" />
+                <MenuLink url="/" title="Our client" />
+                <MenuLink url="/" title="Contact us" />
                 </VStack>
               </DrawerBody>
             </DrawerContent>

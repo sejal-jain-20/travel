@@ -6,6 +6,7 @@ import {
   Image,
   Input,
   Stack,
+  Textarea,
   VStack,
 } from "@chakra-ui/react";
 import React, { useState } from "react";
@@ -16,7 +17,7 @@ import { AspectRatio } from "@chakra-ui/react";
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [textarea, settextarea] = useState("");
 
   const submitHandler = (e) => {
     e.preventDefault();
@@ -62,12 +63,12 @@ const Contact = () => {
                 />
               </Box>
               <Box my={"4"}>
-                <Input
+                <Textarea
                   required
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                  placeholder={"Password"}
-                  type="password"
+                  value={textarea}
+                  onChange={(e) => settextarea(e.target.value)}
+                  placeholder={"Write your query - "}
+                  type="textarea"
                   focusBorderColor="green.400"
                 />
               </Box>
